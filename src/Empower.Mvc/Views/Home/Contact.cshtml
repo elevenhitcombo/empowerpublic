@@ -5,18 +5,37 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
+@if (Model.HasErrored)
+{
+    <div class="alert alert-danger">
+        <h1>@Model.ErrorMessage</h1>
+    </div>
+
+}
+
+@if (Model.CompletedAt.HasValue == false)
+{
 <form method="post" asp-controller="Home" asp-action="Contact">
     <div class="form-group">
         <label asp-for="Name">Name</label>
         <input asp-for="Name" type="text" class="form-control" />
+        <span asp-validation-for="Name" class="label label-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="Email">Email</label>
         <input asp-for="Email" type="text" class="form-control" />
+        <span asp-validation-for="Email" class="label label-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="Message">Please enter your message</label>
-        <input asp-for="Message" type="text" class="form-control" />
+        <textarea asp-for="Message" type="text" class="form-control"></textarea>
+        <span asp-validation-for="Message" class="label label-danger"></span>
     </div>
     <input type="submit" class="btn btn-primary" />
 </form>
+} else {
+    <div class="alert alert-success">
+        <h1>Thank you.</h1>
+        <p>Your email has been sent</p>
+    </div>
+}
