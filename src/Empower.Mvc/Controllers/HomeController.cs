@@ -6,13 +6,23 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Empower.Mvc.Models;
 using System.Net.Mail;
+using Microsoft.Extensions.Configuration;
 
 namespace Empower.Mvc.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IConfiguration _configuration;
+
+        public HomeController(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
         public IActionResult Index()
         {
+           
+
             return View();
         }
 
@@ -36,29 +46,32 @@ namespace Empower.Mvc.Controllers
                 // Do something
                 var message = new MailMessage();
                 message.From = 
-                    new MailAddress("s2empower@gmail.com", "Sightsource Bot");
+                    new MailAddress(
+                        _configuration["Contact:FromEmail"], 
+                        _configuration["Contact:FromName"]);
 
                 // Subject
                 message.Subject = "New contact message";
-
                 // To
-                message.To.Add(
-                    new MailAddress("pap@elevenhitcombo.com"));
+                message.To.Add(new MailAddress(
+                   _configuration["Contact:ToEmail"] ,
+                   _configuration["Contact:ToName"]
+                ));
 
                 // Message
-
                 message.Body = $"New contact from {viewModel.Name} ({viewModel.Email}) " +
                     Environment.NewLine +
                     viewModel.Message;
-
                 // Set up a new SmtpClient
-                var mailClient = new SmtpClient("email-smtp.us-east-1.amazonaws.com",587);
+                var mailClient = new SmtpClient(
+                    _configuration["Contact:SmtpHost"],
+                    Convert.ToInt32(_configuration["Contact:SmtpPort"]));
 
                 mailClient.UseDefaultCredentials = false;
               
                 mailClient.Credentials = new System.Net.NetworkCredential(
-                 "AKIAJZT46OGOXRVDV55Q",
-                 "AnQ9XTmy2Bb7g+adRah8ZLVkJzvwQr3y448eeVfqfGg"
+                  _configuration["Contact:SmtpUsername"],
+                  _configuration["Contact:SmtpPassword"]
                 );
 
                 mailClient.EnableSsl = true;
@@ -71,9 +84,7 @@ namespace Empower.Mvc.Controllers
                 catch(Exception ex)
                 {
                     viewModel.ErrorMessage = "Oops.  Something went wrong";
-                    
                 }
-               
             }
             return View(viewModel);
         }
