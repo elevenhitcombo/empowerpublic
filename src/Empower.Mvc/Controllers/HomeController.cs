@@ -13,22 +13,17 @@ namespace Empower.Mvc.Controllers
 {
     public class HomeController : Controller
     {
-        // These are to allow HomeController to access
-        // IConfiguration or ISettingsService functionality
-        private readonly IConfiguration _configuration;
-        private readonly ISettingsService _settingsService;
+        private IEmailSettingsService _emailSettingsService;
 
         // This is a constructor acting as a recipe.
         // It contains all the ingredients that HomeController
         // needs to do its job.
         //
         public HomeController(
-            IConfiguration configuration,
-            ISettingsService settingsService
+           IEmailSettingsService emailSettingsService
         )
         {
-            _configuration = configuration;
-            _settingsService = settingsService;
+            _emailSettingsService = emailSettingsService;
         }
 
         public IActionResult Index()
@@ -83,15 +78,15 @@ namespace Empower.Mvc.Controllers
                 var message = new MailMessage();
                 message.From = 
                     new MailAddress(
-                       _settingsService.GetStringValue("Contact:FromEmail"), 
-                        _configuration["Contact:FromName"]);
+                       _emailSettingsService.ContactFromEmail, 
+                       _emailSettingsService.ContactToEmail);
 
                 // Subject
                 message.Subject = "New contact message";
                 // To
                 message.To.Add(new MailAddress(
-                   _configuration["Contact:ToEmail"] ,
-                   _configuration["Contact:ToName"]
+                   _emailSettingsService.ContactToEmail,
+                   _emailSettingsService.ContactToName
                 ));
 
                 // Message
@@ -100,17 +95,17 @@ namespace Empower.Mvc.Controllers
                     viewModel.Message;
                 // Set up a new SmtpClient
                 var mailClient = new SmtpClient(
-                    _configuration["Contact:SmtpHost"],
-                    Convert.ToInt32(_configuration["Contact:SmtpPort"]));
+                    _emailSettingsService.SmtpHost,
+                    _emailSettingsService.SmtpPort));
 
                 mailClient.UseDefaultCredentials = false;
               
                 mailClient.Credentials = new System.Net.NetworkCredential(
-                  _configuration["Contact:SmtpUsername"],
-                  _configuration["Contact:SmtpPassword"]
+                  _emailSettingsService.SmtpUsername,
+                  _emailSettingsService.SmtpPassword
                 );
 
-                mailClient.EnableSsl = true;
+                mailClient.EnableSsl = _emailSettingsService.EnableSsl;
 
                 try
                 {
