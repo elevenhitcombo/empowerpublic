@@ -81,15 +81,6 @@ namespace Empower.Mvc.Controllers
                     viewModel.Message
                 );
 
-                // We are assigning something to viewModel.ErrorMessage
-                viewModel.ErrorMessage =
-                    // equivalent of if (viewModel.CompletedAt.HasValue)
-                    viewModel.CompletedAt.HasValue
-                        // when the above statement is true
-                        ? string.Empty
-                        // when the above statement is false
-                        : "Oops.  We have a problem";
-
                 if (!viewModel.CompletedAt.HasValue)
                 {
                     viewModel.ErrorMessage = "Oops.  We have a problem";
