@@ -6,6 +6,8 @@ namespace Empower.Services
 {
     public interface IEmailSettingsService
     {
+        // We do not want to *CHANGE* any of these elements
+        // These are read only
         string SmtpHost { get;  }
         string SmtpPassword { get;  }
         string SmtpUsername { get;  }

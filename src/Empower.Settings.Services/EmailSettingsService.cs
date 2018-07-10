@@ -5,13 +5,13 @@ using System.Text;
 
 namespace Empower.Settings.Services
 {
-    public class EmailSettingService : IEmailSettingsService
+    public class EmailSettingsService : IEmailSettingsService
     {
         private const string ContactPrefix = "Contact";
 
         private readonly ISettingsService _settingsService;
 
-        public EmailSettingService(ISettingsService settingService)
+        public EmailSettingsService(ISettingsService settingService)
         {
             _settingsService = settingService;
         }

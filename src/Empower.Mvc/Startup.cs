@@ -24,6 +24,7 @@ namespace Empower.Mvc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<ISettingsService, SettingsService>();
+            services.AddSingleton<IEmailSettingsService, EmailSettingsService>();
              
             services.AddMvc();
         }
