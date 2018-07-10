@@ -75,16 +75,11 @@ namespace Empower.Mvc.Controllers
         {
             if (ModelState.IsValid)
             {
-                var request = new SendEmailRequest()
-                {
-                    Name = viewModel.Name,
-                    Email = viewModel.Email,
-                    Message = viewModel.Message
-                };
-
                 var response = _emailService.SendContactEmail
                 (
-                    request
+                    viewModel.Name,
+                    viewModel.Email,
+                    viewModel.Message
                 );
 
                 viewModel.CompletedAt = response.CompletedAt;

@@ -20,6 +20,17 @@ namespace Empower.Network.Services
             _emailSettingsService = emailSettingsService;
         }
 
+        public SendEmailResponse SendContactEmail(string name, string email, string message)
+        {
+            return SendContactEmail(new SendEmailRequest
+            {
+                Subject = "Overload",
+                Name = name,
+                Email = email,
+                Message = message
+            });
+        }
+
         public SendEmailResponse SendContactEmail(SendEmailRequest request)
         {
             var response = new SendEmailResponse();

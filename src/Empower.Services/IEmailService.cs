@@ -9,5 +9,6 @@ namespace Empower.Services
     public interface IEmailService
     {
         SendEmailResponse SendContactEmail(SendEmailRequest request);
+        SendEmailResponse SendContactEmail(string name, string email, string message);
     }
 }
