@@ -1,8 +1,18 @@
-﻿@{
+﻿
+@*@model ActorListViewModel*@
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="jumbotron">
     <h1>Empower MVC training</h1>
     <h2>Paul Alan Taylor</h2>
+</div>
+<div class="row">
+    @foreach (var actor in (List<Actor>)ViewData["actors"])
+    {
+    <div class="col-md-4">
+        <h2>@actor.Lastname, @actor.Firstname <span class="badge">@actor.Films</span></h2>
+    </div>
+    }
 </div>

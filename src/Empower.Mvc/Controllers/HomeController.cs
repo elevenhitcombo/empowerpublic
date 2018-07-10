@@ -13,7 +13,6 @@ namespace Empower.Mvc.Controllers
     public class HomeController : Controller
     {
         private readonly IConfiguration _configuration;
-
         public HomeController(IConfiguration configuration)
         {
             _configuration = configuration;
@@ -21,12 +20,36 @@ namespace Empower.Mvc.Controllers
 
         public IActionResult Index()
         {
-           
+            List<Actor> actors = new List<Actor>
+            {
+                new Actor
+                {
+                    Firstname = "Meryl",
+                    Lastname = "Streep",
+                    Films = 20
+                },
+                new Actor
+                {
+                    Firstname = "Bobcat",
+                    Lastname = "Goldthwaite",
+                    Films = 2
+                },
+                new Actor
+                {
+                    Firstname = "Steve",
+                    Lastname = "Guttenberg",
+                    Films = 5
+                }
+            };
 
+            var vm = new ActorListViewModel
+            {
+                Actors = actors
+            };
+            ViewData["actors"] = actors;
+            // return View(vm);
             return View();
         }
-
-        
 
         public IActionResult Contact()
         {

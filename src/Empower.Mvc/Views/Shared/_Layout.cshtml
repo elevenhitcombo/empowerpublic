@@ -29,10 +29,7 @@
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Empower.Mvc</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
+                @Html.Partial("~/Views/Nav/TopMenu.cshtml")
             </div>
         </div>
     </nav>
