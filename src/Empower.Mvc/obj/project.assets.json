@@ -5029,6 +5029,29 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "Empower.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Empower.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Empower.Services.dll": {}
+        }
+      },
+      "Empower.Settings.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Empower.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Empower.Settings.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Empower.Settings.Services.dll": {}
+        }
       }
     }
   },
@@ -13105,10 +13128,22 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "Empower.Services/1.0.0": {
+      "type": "project",
+      "path": "../Empower.Services/Empower.Services.csproj",
+      "msbuildProject": "../Empower.Services/Empower.Services.csproj"
+    },
+    "Empower.Settings.Services/1.0.0": {
+      "type": "project",
+      "path": "../Empower.Settings.Services/Empower.Settings.Services.csproj",
+      "msbuildProject": "../Empower.Settings.Services/Empower.Settings.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Empower.Services >= 1.0.0",
+      "Empower.Settings.Services >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.0"
@@ -13146,7 +13181,14 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\Projects\\Git\\empowermvc\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj": {
+              "projectPath": "F:\\Projects\\Git\\empowermvc\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj"
+            },
+            "F:\\Projects\\Git\\empowermvc\\src\\Empower.Services\\Empower.Services.csproj": {
+              "projectPath": "F:\\Projects\\Git\\empowermvc\\src\\Empower.Services\\Empower.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

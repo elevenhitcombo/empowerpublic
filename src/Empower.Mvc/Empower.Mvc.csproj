@@ -13,4 +13,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Empower.Services\Empower.Services.csproj" />
+    <ProjectReference Include="..\Empower.Settings.Services\Empower.Settings.Services.csproj" />
+  </ItemGroup>
+
 </Project>

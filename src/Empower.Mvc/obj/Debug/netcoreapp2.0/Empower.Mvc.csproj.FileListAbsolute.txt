@@ -9,3 +9,7 @@ F:\Projects\Git\empowermvc\src\Empower.Mvc\obj\Debug\netcoreapp2.0\Empower.Mvc.A
 F:\Projects\Git\empowermvc\src\Empower.Mvc\obj\Debug\netcoreapp2.0\Empower.Mvc.dll
 F:\Projects\Git\empowermvc\src\Empower.Mvc\obj\Debug\netcoreapp2.0\Empower.Mvc.pdb
 F:\Projects\Git\empowermvc\src\Empower.Mvc\obj\Debug\netcoreapp2.0\Empower.Mvc.csprojResolveAssemblyReference.cache
+F:\Projects\Git\empowermvc\src\Empower.Mvc\bin\Debug\netcoreapp2.0\Empower.Services.dll
+F:\Projects\Git\empowermvc\src\Empower.Mvc\bin\Debug\netcoreapp2.0\Empower.Settings.Services.dll
+F:\Projects\Git\empowermvc\src\Empower.Mvc\bin\Debug\netcoreapp2.0\Empower.Services.pdb
+F:\Projects\Git\empowermvc\src\Empower.Mvc\bin\Debug\netcoreapp2.0\Empower.Settings.Services.pdb

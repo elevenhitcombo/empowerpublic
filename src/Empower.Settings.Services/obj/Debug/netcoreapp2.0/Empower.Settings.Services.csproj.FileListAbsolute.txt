@@ -1,0 +1,11 @@
+F:\Projects\Git\empowermvc\src\Empower.Settings.Services\bin\Debug\netcoreapp2.0\Empower.Settings.Services.deps.json
+F:\Projects\Git\empowermvc\src\Empower.Settings.Services\bin\Debug\netcoreapp2.0\Empower.Settings.Services.dll
+F:\Projects\Git\empowermvc\src\Empower.Settings.Services\bin\Debug\netcoreapp2.0\Empower.Settings.Services.pdb
+F:\Projects\Git\empowermvc\src\Empower.Settings.Services\bin\Debug\netcoreapp2.0\Empower.Services.dll
+F:\Projects\Git\empowermvc\src\Empower.Settings.Services\bin\Debug\netcoreapp2.0\Empower.Services.pdb
+F:\Projects\Git\empowermvc\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.csprojResolveAssemblyReference.cache
+F:\Projects\Git\empowermvc\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.csproj.CoreCompileInputs.cache
+F:\Projects\Git\empowermvc\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.AssemblyInfoInputs.cache
+F:\Projects\Git\empowermvc\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.AssemblyInfo.cs
+F:\Projects\Git\empowermvc\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.dll
+F:\Projects\Git\empowermvc\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.pdb
