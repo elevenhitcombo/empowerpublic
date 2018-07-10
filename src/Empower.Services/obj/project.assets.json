@@ -673,11 +673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "F:\\Projects\\Git\\empowermvc\\src\\Empower.Services\\Empower.Services.csproj",
+      "projectUniqueName": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj",
       "projectName": "Empower.Services",
-      "projectPath": "F:\\Projects\\Git\\empowermvc\\src\\Empower.Services\\Empower.Services.csproj",
+      "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\Git\\empowermvc\\src\\Empower.Services\\obj\\",
+      "outputPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

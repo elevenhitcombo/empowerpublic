@@ -7,15 +7,28 @@ using Microsoft.AspNetCore.Mvc;
 using Empower.Mvc.Models;
 using System.Net.Mail;
 using Microsoft.Extensions.Configuration;
+using Empower.Services;
 
 namespace Empower.Mvc.Controllers
 {
     public class HomeController : Controller
     {
+        // These are to allow HomeController to access
+        // IConfiguration or ISettingsService functionality
         private readonly IConfiguration _configuration;
-        public HomeController(IConfiguration configuration)
+        private readonly ISettingsService _settingsService;
+
+        // This is a constructor acting as a recipe.
+        // It contains all the ingredients that HomeController
+        // needs to do its job.
+        //
+        public HomeController(
+            IConfiguration configuration,
+            ISettingsService settingsService
+        )
         {
             _configuration = configuration;
+            _settingsService = settingsService;
         }
 
         public IActionResult Index()
@@ -70,7 +83,7 @@ namespace Empower.Mvc.Controllers
                 var message = new MailMessage();
                 message.From = 
                     new MailAddress(
-                        _configuration["Contact:FromEmail"], 
+                       _settingsService.GetStringValue("Contact:FromEmail"), 
                         _configuration["Contact:FromName"]);
 
                 // Subject
