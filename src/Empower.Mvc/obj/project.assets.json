@@ -5043,6 +5043,19 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "Empower.Network.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Empower.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Empower.Network.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Empower.Network.Services.dll": {}
+        }
+      },
       "Empower.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
@@ -13173,6 +13186,11 @@
         "windowsazure.storage.nuspec"
       ]
     },
+    "Empower.Network.Services/1.0.0": {
+      "type": "project",
+      "path": "../Empower.Network.Services/Empower.Network.Services.csproj",
+      "msbuildProject": "../Empower.Network.Services/Empower.Network.Services.csproj"
+    },
     "Empower.Services/1.0.0": {
       "type": "project",
       "path": "../Empower.Services/Empower.Services.csproj",
@@ -13186,6 +13204,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Empower.Network.Services >= 1.0.0",
       "Empower.Services >= 1.0.0",
       "Empower.Settings.Services >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
@@ -13228,6 +13247,9 @@
           "projectReferences": {
             "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj": {
               "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj"
+            },
+            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj": {
+              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj"
             },
             "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj": {
               "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj"

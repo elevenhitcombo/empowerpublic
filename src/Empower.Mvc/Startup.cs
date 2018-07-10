@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Empower.Services;
 using Empower.Settings.Services;
+using Empower.Network.Services;
 
 namespace Empower.Mvc
 {
@@ -25,7 +26,7 @@ namespace Empower.Mvc
         {
             services.AddSingleton<ISettingsService, SettingsService>();
             services.AddSingleton<IEmailSettingsService, EmailSettingsService>();
-             
+            services.AddSingleton<IEmailService, EmailService>();
             services.AddMvc();
         }
 

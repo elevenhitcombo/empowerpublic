@@ -13,17 +13,17 @@ namespace Empower.Mvc.Controllers
 {
     public class HomeController : Controller
     {
-        private IEmailSettingsService _emailSettingsService;
+        private IEmailService _emailService;
 
         // This is a constructor acting as a recipe.
         // It contains all the ingredients that HomeController
         // needs to do its job.
         //
         public HomeController(
-           IEmailSettingsService emailSettingsService
+           IEmailService emailService
         )
         {
-            _emailSettingsService = emailSettingsService;
+            _emailService = emailService;
         }
 
         public IActionResult Index()
@@ -74,47 +74,25 @@ namespace Empower.Mvc.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Do something
-                var message = new MailMessage();
-                message.From = 
-                    new MailAddress(
-                       _emailSettingsService.ContactFromEmail, 
-                       _emailSettingsService.ContactToEmail);
-
-                // Subject
-                message.Subject = "New contact message";
-                // To
-                message.To.Add(new MailAddress(
-                   _emailSettingsService.ContactToEmail,
-                   _emailSettingsService.ContactToName
-                ));
-
-                // Message
-                message.Body = $"New contact from {viewModel.Name} ({viewModel.Email}) " +
-                    Environment.NewLine +
-                    viewModel.Message;
-                // Set up a new SmtpClient
-                var mailClient = new SmtpClient(
-                    _emailSettingsService.SmtpHost,
-                    _emailSettingsService.SmtpPort));
-
-                mailClient.UseDefaultCredentials = false;
-              
-                mailClient.Credentials = new System.Net.NetworkCredential(
-                  _emailSettingsService.SmtpUsername,
-                  _emailSettingsService.SmtpPassword
+                viewModel.CompletedAt = _emailService.SendContactEmail
+                (
+                    viewModel.Name,
+                    viewModel.Email,
+                    viewModel.Message
                 );
 
-                mailClient.EnableSsl = _emailSettingsService.EnableSsl;
+                // We are assigning something to viewModel.ErrorMessage
+                viewModel.ErrorMessage =
+                    // equivalent of if (viewModel.CompletedAt.HasValue)
+                    viewModel.CompletedAt.HasValue
+                        // when the above statement is true
+                        ? string.Empty
+                        // when the above statement is false
+                        : "Oops.  We have a problem";
 
-                try
+                if (!viewModel.CompletedAt.HasValue)
                 {
-                    mailClient.Send(message);
-                    viewModel.CompletedAt = DateTime.UtcNow;
-                }
-                catch(Exception ex)
-                {
-                    viewModel.ErrorMessage = "Oops.  Something went wrong";
+                    viewModel.ErrorMessage = "Oops.  We have a problem";
                 }
             }
             return View(viewModel);
