@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Empower.Mvc.Models
+namespace Empower.Domain.Client.ViewModels
 {
     public class ContactViewModel
     {

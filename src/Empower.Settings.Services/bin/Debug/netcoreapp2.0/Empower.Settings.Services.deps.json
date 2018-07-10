@@ -53,7 +53,15 @@
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
+      "Empower.Domain/1.0.0": {
+        "runtime": {
+          "Empower.Domain.dll": {}
+        }
+      },
       "Empower.Services/1.0.0": {
+        "dependencies": {
+          "Empower.Domain": "1.0.0"
+        },
         "runtime": {
           "Empower.Services.dll": {}
         }
@@ -100,6 +108,11 @@
       "sha512": "sha512-qUJMNWhbm9oZ3XaMFiEMiYmRPszbnXIkRIi7+4b2Md2xZ6JUOepf0/kY3S85qistRohl9OdMe4PsO+RdG2kTIQ==",
       "path": "system.runtime.compilerservices.unsafe/4.5.1",
       "hashPath": "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+    },
+    "Empower.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Empower.Services/1.0.0": {
       "type": "project",

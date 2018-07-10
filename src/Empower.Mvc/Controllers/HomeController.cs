@@ -4,10 +4,11 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Empower.Mvc.Models;
 using System.Net.Mail;
 using Microsoft.Extensions.Configuration;
 using Empower.Services;
+using Empower.Domain.Client.Requests;
+using Empower.Domain.Client.ViewModels;
 
 namespace Empower.Mvc.Controllers
 {
@@ -74,12 +75,19 @@ namespace Empower.Mvc.Controllers
         {
             if (ModelState.IsValid)
             {
-                viewModel.CompletedAt = _emailService.SendContactEmail
+                var request = new SendEmailRequest()
+                {
+                    Name = viewModel.Name,
+                    Email = viewModel.Email,
+                    Message = viewModel.Message
+                };
+
+                var response = _emailService.SendContactEmail
                 (
-                    viewModel.Name,
-                    viewModel.Email,
-                    viewModel.Message
+                    request
                 );
+
+                viewModel.CompletedAt = response.CompletedAt;
 
                 if (!viewModel.CompletedAt.HasValue)
                 {

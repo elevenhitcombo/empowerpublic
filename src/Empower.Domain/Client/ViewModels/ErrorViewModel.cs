@@ -1,6 +1,6 @@
 using System;
 
-namespace Empower.Mvc.Models
+namespace Empower.Domain.Client.ViewModels
 {
     public class ErrorViewModel
     {

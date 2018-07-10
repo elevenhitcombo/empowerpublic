@@ -9,3 +9,5 @@ F:\Projects\Git\empowerpublic\src\Empower.Network.Services\obj\Debug\netcoreapp2
 F:\Projects\Git\empowerpublic\src\Empower.Network.Services\obj\Debug\netcoreapp2.0\Empower.Network.Services.AssemblyInfo.cs
 F:\Projects\Git\empowerpublic\src\Empower.Network.Services\obj\Debug\netcoreapp2.0\Empower.Network.Services.dll
 F:\Projects\Git\empowerpublic\src\Empower.Network.Services\obj\Debug\netcoreapp2.0\Empower.Network.Services.pdb
+F:\Projects\Git\empowerpublic\src\Empower.Network.Services\bin\Debug\netcoreapp2.0\Empower.Domain.dll
+F:\Projects\Git\empowerpublic\src\Empower.Network.Services\bin\Debug\netcoreapp2.0\Empower.Domain.pdb

@@ -197,9 +197,22 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Empower.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Empower.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Empower.Domain.dll": {}
+        }
+      },
       "Empower.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Empower.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Empower.Services.dll": {}
         },
@@ -666,6 +679,11 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Empower.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Empower.Domain/Empower.Domain.csproj",
+      "msbuildProject": "../Empower.Domain/Empower.Domain.csproj"
     },
     "Empower.Services/1.0.0": {
       "type": "project",

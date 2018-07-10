@@ -255,9 +255,22 @@
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
+      "Empower.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Empower.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Empower.Domain.dll": {}
+        }
+      },
       "Empower.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Empower.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Empower.Services.dll": {}
         },
@@ -808,6 +821,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Empower.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Empower.Domain/Empower.Domain.csproj",
+      "msbuildProject": "../Empower.Domain/Empower.Domain.csproj"
     },
     "Empower.Services/1.0.0": {
       "type": "project",
