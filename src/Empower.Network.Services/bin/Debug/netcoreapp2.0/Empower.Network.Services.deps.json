@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.0": {
       "Empower.Network.Services/1.0.0": {
         "dependencies": {
+          "Empower.Domain": "1.0.0",
           "Empower.Services": "1.0.0"
         },
         "runtime": {

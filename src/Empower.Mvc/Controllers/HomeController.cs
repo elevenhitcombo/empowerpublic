@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net.Mail;
 using Microsoft.Extensions.Configuration;
 using Empower.Services;
+using NHibernate;
+using NHibernate.Criterion;
 using Empower.Domain.Client.Requests;
 using Empower.Domain.Client.ViewModels;
 
@@ -15,47 +17,25 @@ namespace Empower.Mvc.Controllers
     public class HomeController : Controller
     {
         private IEmailService _emailService;
+        private ISession _session;
 
         // This is a constructor acting as a recipe.
         // It contains all the ingredients that HomeController
         // needs to do its job.
         //
         public HomeController(
-           IEmailService emailService
+           IEmailService emailService,
+           ISession session
         )
         {
             _emailService = emailService;
+            _session = session;
         }
 
         public IActionResult Index()
         {
-            List<Actor> actors = new List<Actor>
-            {
-                new Actor
-                {
-                    Firstname = "Meryl",
-                    Lastname = "Streep",
-                    Films = 20
-                },
-                new Actor
-                {
-                    Firstname = "Bobcat",
-                    Lastname = "Goldthwaite",
-                    Films = 2
-                },
-                new Actor
-                {
-                    Firstname = "Steve",
-                    Lastname = "Guttenberg",
-                    Films = 5
-                }
-            };
-
-            var vm = new ActorListViewModel
-            {
-                Actors = actors
-            };
-            ViewData["actors"] = actors;
+           
+          
             // return View(vm);
             return View();
         }

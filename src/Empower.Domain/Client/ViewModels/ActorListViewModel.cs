@@ -7,6 +7,6 @@ namespace Empower.Domain.Client.ViewModels
 {
     public class ActorListViewModel
     {
-        public List<Actor> Actors { get; set; }
+       // public IList<Empower.NHibernate.Entities.Actor> Actors { get; set; }
     }
 }

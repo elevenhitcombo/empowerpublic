@@ -1,0 +1,17 @@
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\bin\Debug\netcoreapp2.0\Empower.NHibernate.Entities.deps.json
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\bin\Debug\netcoreapp2.0\Empower.NHibernate.Entities.dll
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.csprojResolveAssemblyReference.cache
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.csproj.CoreCompileInputs.cache
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.AssemblyInfoInputs.cache
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.AssemblyInfo.cs
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\bin\Debug\netcoreapp2.0\Empower.NHibernate.Entities.pdb
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.dll
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.pdb
+F:\Projects\Git\empowerpublic\src\Empower.NHibernate.Entities\bin\Debug\netcoreapp2.0\Empower.NHibernate.Entities.deps.json
+F:\Projects\Git\empowerpublic\src\Empower.NHibernate.Entities\bin\Debug\netcoreapp2.0\Empower.NHibernate.Entities.dll
+F:\Projects\Git\empowerpublic\src\Empower.NHibernate.Entities\bin\Debug\netcoreapp2.0\Empower.NHibernate.Entities.pdb
+F:\Projects\Git\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.csproj.CoreCompileInputs.cache
+F:\Projects\Git\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.AssemblyInfoInputs.cache
+F:\Projects\Git\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.AssemblyInfo.cs
+F:\Projects\Git\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.dll
+F:\Projects\Git\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.pdb

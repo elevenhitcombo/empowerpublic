@@ -11,7 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empower.Settings.Services",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empower.Network.Services", "Empower.Network.Services\Empower.Network.Services.csproj", "{F4FE659D-CC05-45B2-8F4B-4B355A38FC1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empower.Domain", "Empower.Domain\Empower.Domain.csproj", "{0CE475F8-683B-4E2A-A1CB-3FCC5113F860}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empower.NHibernate.Entities", "Empower.NHibernate.Entities\Empower.NHibernate.Entities.csproj", "{255A0AA1-55A3-424A-A238-C9114213B578}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empower.NHibernate", "Empower.NHibernate\Empower.NHibernate.csproj", "{19614AE7-0850-44CC-93F3-237DE88F9D37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empower.NHibernate.Setup", "Empower.NHibernate.Setup\Empower.NHibernate.Setup.csproj", "{7CAC7CE2-FBB2-4857-951C-2A2C14234EF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Empower.Domain", "Empower.Domain\Empower.Domain.csproj", "{BD59A27B-C905-4790-A742-24FBAAF3B911}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +41,22 @@ Global
 		{F4FE659D-CC05-45B2-8F4B-4B355A38FC1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4FE659D-CC05-45B2-8F4B-4B355A38FC1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4FE659D-CC05-45B2-8F4B-4B355A38FC1F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0CE475F8-683B-4E2A-A1CB-3FCC5113F860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0CE475F8-683B-4E2A-A1CB-3FCC5113F860}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0CE475F8-683B-4E2A-A1CB-3FCC5113F860}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0CE475F8-683B-4E2A-A1CB-3FCC5113F860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{255A0AA1-55A3-424A-A238-C9114213B578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{255A0AA1-55A3-424A-A238-C9114213B578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{255A0AA1-55A3-424A-A238-C9114213B578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{255A0AA1-55A3-424A-A238-C9114213B578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19614AE7-0850-44CC-93F3-237DE88F9D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19614AE7-0850-44CC-93F3-237DE88F9D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19614AE7-0850-44CC-93F3-237DE88F9D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19614AE7-0850-44CC-93F3-237DE88F9D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CAC7CE2-FBB2-4857-951C-2A2C14234EF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CAC7CE2-FBB2-4857-951C-2A2C14234EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CAC7CE2-FBB2-4857-951C-2A2C14234EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CAC7CE2-FBB2-4857-951C-2A2C14234EF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD59A27B-C905-4790-A742-24FBAAF3B911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD59A27B-C905-4790-A742-24FBAAF3B911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD59A27B-C905-4790-A742-24FBAAF3B911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD59A27B-C905-4790-A742-24FBAAF3B911}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

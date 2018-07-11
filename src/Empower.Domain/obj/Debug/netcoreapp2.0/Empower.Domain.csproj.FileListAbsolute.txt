@@ -1,9 +1,8 @@
-F:\Projects\Git\empowerpublic\src\Empower.Domain\bin\Debug\netcoreapp2.0\Empower.Domain.deps.json
-F:\Projects\Git\empowerpublic\src\Empower.Domain\bin\Debug\netcoreapp2.0\Empower.Domain.dll
-F:\Projects\Git\empowerpublic\src\Empower.Domain\bin\Debug\netcoreapp2.0\Empower.Domain.pdb
-F:\Projects\Git\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.csprojResolveAssemblyReference.cache
 F:\Projects\Git\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.csproj.CoreCompileInputs.cache
 F:\Projects\Git\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.AssemblyInfoInputs.cache
 F:\Projects\Git\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.AssemblyInfo.cs
+F:\Projects\Git\empowerpublic\src\Empower.Domain\bin\Debug\netcoreapp2.0\Empower.Domain.deps.json
+F:\Projects\Git\empowerpublic\src\Empower.Domain\bin\Debug\netcoreapp2.0\Empower.Domain.dll
+F:\Projects\Git\empowerpublic\src\Empower.Domain\bin\Debug\netcoreapp2.0\Empower.Domain.pdb
 F:\Projects\Git\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.dll
 F:\Projects\Git\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.pdb

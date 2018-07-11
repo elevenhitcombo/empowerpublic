@@ -693,6 +693,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Empower.Domain >= 1.0.0",
       "Empower.Services >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
@@ -730,6 +731,9 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
+            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj": {
+              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj"
+            },
             "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj": {
               "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj"
             }
