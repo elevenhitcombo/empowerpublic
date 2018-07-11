@@ -1,0 +1,9 @@
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate\bin\Debug\netcoreapp2.0\Empower.NHibernate.deps.json
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate\bin\Debug\netcoreapp2.0\Empower.NHibernate.dll
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate\bin\Debug\netcoreapp2.0\Empower.NHibernate.pdb
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate\obj\Debug\netcoreapp2.0\Empower.NHibernate.csprojResolveAssemblyReference.cache
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate\obj\Debug\netcoreapp2.0\Empower.NHibernate.csproj.CoreCompileInputs.cache
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate\obj\Debug\netcoreapp2.0\Empower.NHibernate.AssemblyInfoInputs.cache
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate\obj\Debug\netcoreapp2.0\Empower.NHibernate.AssemblyInfo.cs
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate\obj\Debug\netcoreapp2.0\Empower.NHibernate.dll
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate\obj\Debug\netcoreapp2.0\Empower.NHibernate.pdb

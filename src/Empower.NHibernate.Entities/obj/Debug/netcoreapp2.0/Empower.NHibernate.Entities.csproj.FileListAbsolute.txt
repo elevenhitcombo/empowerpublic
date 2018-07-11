@@ -4,3 +4,6 @@ C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netc
 C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.csproj.CoreCompileInputs.cache
 C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.AssemblyInfoInputs.cache
 C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.AssemblyInfo.cs
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\bin\Debug\netcoreapp2.0\Empower.NHibernate.Entities.pdb
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.dll
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.pdb

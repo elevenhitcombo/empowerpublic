@@ -6,14 +6,30 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Empower.Services;
-using Empower.Settings.Services;
 using Empower.Network.Services;
+using Empower.Settings.Services;
+using Ninject;
+using System.Threading;
+using Ninject.Activation;
+using Ninject.Infrastructure.Disposal;
+using Microsoft.AspNetCore.Http;
+using Empower.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.ViewFeatures.Internal;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Empower.Services;
 
 namespace Empower.Mvc
 {
     public class Startup
     {
+        private readonly AsyncLocal<Scope> scopeProvider = new AsyncLocal<Scope>();
+        private IKernel Kernel { get; set; }
+
+        private object Resolve(Type type) => Kernel.Get(type);
+        private object RequestScope(IContext context) => scopeProvider.Value;
+
+        private sealed class Scope : DisposableObject { }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -24,15 +40,19 @@ namespace Empower.Mvc
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<ISettingsService, SettingsService>();
-            services.AddSingleton<IEmailSettingsService, EmailSettingsService>();
-            services.AddSingleton<IEmailService, EmailService>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddRequestScopingMiddleware(() => scopeProvider.Value = new Scope());
+            services.AddCustomControllerActivation(Resolve);
+            services.AddCustomViewComponentActivation(Resolve);
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            this.Kernel = this.RegisterApplicationComponents(app);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -51,6 +71,34 @@ namespace Empower.Mvc
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            app.UseAuthentication();
+        }
+
+        private IKernel RegisterApplicationComponents(IApplicationBuilder app)
+        {
+            // IKernelConfiguration config = new KernelConfiguration();
+            var kernel = new StandardKernel();
+
+            // Register application services
+            foreach (var ctrlType in app.GetControllerTypes())
+            {
+                kernel.Bind(ctrlType).ToSelf().InScope(RequestScope);
+            }
+
+           
+            kernel.Bind<IConfiguration>().ToMethod(m => this.Configuration)
+                .InSingletonScope();
+            kernel.Bind<ISettingsService>().To<SettingsService>()
+                .InSingletonScope();
+            kernel.Bind<IEmailSettingsService>().To<EmailSettingsService>();
+            kernel.Bind<IEmailService>().To<EmailService>().InSingletonScope();
+           
+
+            // Cross-wire required framework services
+            kernel.BindToMethod(app.GetRequestService<IViewBufferScope>);
+
+            return kernel;
         }
     }
 }

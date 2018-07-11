@@ -20,3 +20,14 @@ F:\Projects\Git\empowerpublic\src\Empower.Settings.Services\obj\Debug\netcoreapp
 F:\Projects\Git\empowerpublic\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.AssemblyInfo.cs
 F:\Projects\Git\empowerpublic\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.dll
 F:\Projects\Git\empowerpublic\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.pdb
+C:\Projects\empower\empowerpublic\src\Empower.Settings.Services\bin\Debug\netcoreapp2.0\Empower.Settings.Services.deps.json
+C:\Projects\empower\empowerpublic\src\Empower.Settings.Services\bin\Debug\netcoreapp2.0\Empower.Settings.Services.dll
+C:\Projects\empower\empowerpublic\src\Empower.Settings.Services\bin\Debug\netcoreapp2.0\Empower.Settings.Services.pdb
+C:\Projects\empower\empowerpublic\src\Empower.Settings.Services\bin\Debug\netcoreapp2.0\Empower.Services.dll
+C:\Projects\empower\empowerpublic\src\Empower.Settings.Services\bin\Debug\netcoreapp2.0\Empower.Services.pdb
+C:\Projects\empower\empowerpublic\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.csprojResolveAssemblyReference.cache
+C:\Projects\empower\empowerpublic\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.csproj.CoreCompileInputs.cache
+C:\Projects\empower\empowerpublic\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.AssemblyInfoInputs.cache
+C:\Projects\empower\empowerpublic\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.AssemblyInfo.cs
+C:\Projects\empower\empowerpublic\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.dll
+C:\Projects\empower\empowerpublic\src\Empower.Settings.Services\obj\Debug\netcoreapp2.0\Empower.Settings.Services.pdb

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "774a5ffbef6a3edebd80c1a0e6ae8ffa10a41384"
+    "signature": "c9a7684f5cdee31ef9c8c444468c2f813fbbc035"
   },
   "compilationOptions": {
     "defines": [
@@ -28,7 +28,8 @@
           "Empower.Settings.Services": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0",
+          "Ninject": "3.3.4"
         },
         "runtime": {
           "Empower.Mvc.dll": {}
@@ -2494,6 +2495,18 @@
         },
         "compile": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "Ninject/3.3.4": {
+        "dependencies": {
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ninject.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/Ninject.dll": {}
         }
       },
       "NuGet.Frameworks/4.0.0": {
@@ -5502,6 +5515,13 @@
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
     },
+    "Ninject/3.3.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CmbWW97FfJuh4LEOVZM/spqXl4KAulRUjqeMwRd5J9rDMQArmIYaDMU3pyzXXHT062tbF0OPIMwI7tSOtprPfg==",
+      "path": "ninject/3.3.4",
+      "hashPath": "ninject.3.3.4.nupkg.sha512"
+    },
     "NuGet.Frameworks/4.0.0": {
       "type": "package",
       "serviceable": true,
@@ -5512,7 +5532,7 @@
     "Remotion.Linq/2.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Eo7TuNPfHiuyOLcTfaCTDNjMfvxG2xKcTF/pABsWfd93Zv7g5mez0lWGSuMiKAbdih7crfiMJn3lo1xRnTsVqQ==",
+      "sha512": "sha512-IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
       "path": "remotion.linq/2.1.1",
       "hashPath": "remotion.linq.2.1.1.nupkg.sha512"
     },
