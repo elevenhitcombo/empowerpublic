@@ -16,6 +16,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Empower.Network.Services\Empower.Network.Services.csproj" />
+    <ProjectReference Include="..\Empower.NHibernate.Entities\Empower.NHibernate.Entities.csproj" />
+    <ProjectReference Include="..\Empower.NHibernate.Setup\Empower.NHibernate.Setup.csproj" />
     <ProjectReference Include="..\Empower.Services\Empower.Services.csproj" />
     <ProjectReference Include="..\Empower.Settings.Services\Empower.Settings.Services.csproj" />
   </ItemGroup>

@@ -47,3 +47,7 @@ C:\Projects\empower\empowerpublic\src\Empower.Mvc\obj\Debug\netcoreapp2.0\Empowe
 C:\Projects\empower\empowerpublic\src\Empower.Mvc\obj\Debug\netcoreapp2.0\Empower.Mvc.AssemblyInfo.cs
 C:\Projects\empower\empowerpublic\src\Empower.Mvc\obj\Debug\netcoreapp2.0\Empower.Mvc.dll
 C:\Projects\empower\empowerpublic\src\Empower.Mvc\obj\Debug\netcoreapp2.0\Empower.Mvc.pdb
+C:\Projects\empower\empowerpublic\src\Empower.Mvc\bin\Debug\netcoreapp2.0\Empower.NHibernate.Entities.dll
+C:\Projects\empower\empowerpublic\src\Empower.Mvc\bin\Debug\netcoreapp2.0\Empower.NHibernate.Setup.dll
+C:\Projects\empower\empowerpublic\src\Empower.Mvc\bin\Debug\netcoreapp2.0\Empower.NHibernate.Setup.pdb
+C:\Projects\empower\empowerpublic\src\Empower.Mvc\bin\Debug\netcoreapp2.0\Empower.NHibernate.Entities.pdb

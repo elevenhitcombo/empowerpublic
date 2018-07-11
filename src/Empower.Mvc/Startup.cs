@@ -17,6 +17,7 @@ using Empower.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.ViewFeatures.Internal;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Empower.Services;
+using nh = NHibernate;
 
 namespace Empower.Mvc
 {
@@ -41,6 +42,7 @@ namespace Empower.Mvc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+          
             services.AddRequestScopingMiddleware(() => scopeProvider.Value = new Scope());
             services.AddCustomControllerActivation(Resolve);
             services.AddCustomViewComponentActivation(Resolve);
@@ -93,7 +95,11 @@ namespace Empower.Mvc
                 .InSingletonScope();
             kernel.Bind<IEmailSettingsService>().To<EmailSettingsService>();
             kernel.Bind<IEmailService>().To<EmailService>().InSingletonScope();
-           
+
+            kernel.Bind<nh.ISession>().ToMethod(m => new Empower.NHibernate.Setup.NhHelper(
+                 new SettingsService(Configuration)
+                ).Session);
+
 
             // Cross-wire required framework services
             kernel.BindToMethod(app.GetRequestService<IViewBufferScope>);
