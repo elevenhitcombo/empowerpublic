@@ -680,7 +680,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\SSC17\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -689,17 +689,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj",
+      "projectUniqueName": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj",
       "projectName": "Empower.Network.Services",
-      "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Network.Services\\obj\\",
+      "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj",
+      "packagesPath": "C:\\Users\\SSC17\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Network.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SSC17\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -712,8 +712,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj": {
-              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj"
+            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj": {
+              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj"
             }
           }
         }
@@ -730,7 +730,7 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },

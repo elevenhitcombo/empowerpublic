@@ -8061,7 +8061,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "Eo7TuNPfHiuyOLcTfaCTDNjMfvxG2xKcTF/pABsWfd93Zv7g5mez0lWGSuMiKAbdih7crfiMJn3lo1xRnTsVqQ==",
+      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -13213,7 +13213,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\SSC17\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13222,17 +13222,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Mvc\\Empower.Mvc.csproj",
+      "projectUniqueName": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Mvc\\Empower.Mvc.csproj",
       "projectName": "Empower.Mvc",
-      "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Mvc\\Empower.Mvc.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Mvc\\obj\\",
+      "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Mvc\\Empower.Mvc.csproj",
+      "packagesPath": "C:\\Users\\SSC17\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Mvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SSC17\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13245,14 +13245,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj": {
-              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj"
+            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj": {
+              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj"
             },
-            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj": {
-              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj"
+            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj": {
+              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj"
             },
-            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj": {
-              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj"
+            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj": {
+              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj"
             }
           }
         }
@@ -13266,18 +13266,18 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           },
-          "Microsoft.AspNetCore.All": {
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )"
           }
         },
         "imports": [
