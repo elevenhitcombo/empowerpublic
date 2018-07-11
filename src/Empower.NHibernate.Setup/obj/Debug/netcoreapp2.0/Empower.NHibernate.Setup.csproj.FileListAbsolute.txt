@@ -1,0 +1,17 @@
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\bin\Debug\netcoreapp2.0\Empower.NHibernate.Setup.deps.json
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\bin\Debug\netcoreapp2.0\Empower.NHibernate.Setup.dll
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\obj\Debug\netcoreapp2.0\Empower.NHibernate.Setup.csproj.CoreCompileInputs.cache
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\obj\Debug\netcoreapp2.0\Empower.NHibernate.Setup.AssemblyInfoInputs.cache
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\obj\Debug\netcoreapp2.0\Empower.NHibernate.Setup.AssemblyInfo.cs
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\bin\Debug\netcoreapp2.0\Empower.NHibernate.Setup.pdb
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\bin\Debug\netcoreapp2.0\Empower.NHibernate.Entities.dll
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\bin\Debug\netcoreapp2.0\Empower.Services.dll
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\bin\Debug\netcoreapp2.0\Empower.NHibernate.Entities.pdb
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\bin\Debug\netcoreapp2.0\Empower.Services.pdb
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\obj\Debug\netcoreapp2.0\Empower.NHibernate.Setup.csprojResolveAssemblyReference.cache
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\obj\Debug\netcoreapp2.0\Empower.NHibernate.Setup.dll
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\obj\Debug\netcoreapp2.0\Empower.NHibernate.Setup.pdb
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\bin\Debug\netcoreapp2.0\Empower.Domain.dll
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\bin\Debug\netcoreapp2.0\Empower.Domain.pdb
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\bin\Debug\netcoreapp2.0\Empower.NHibernate.dll
+C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Setup\bin\Debug\netcoreapp2.0\Empower.NHibernate.pdb
