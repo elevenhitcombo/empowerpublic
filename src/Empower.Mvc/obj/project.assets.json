@@ -13784,7 +13784,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\SSC17\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13793,17 +13793,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Mvc\\Empower.Mvc.csproj",
+      "projectUniqueName": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Mvc\\Empower.Mvc.csproj",
       "projectName": "Empower.Mvc",
-      "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Mvc\\Empower.Mvc.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Mvc\\obj\\",
+      "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Mvc\\Empower.Mvc.csproj",
+      "packagesPath": "C:\\Users\\SSC17\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Mvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SSC17\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13816,23 +13816,23 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj": {
-              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj"
+            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.NHibernate.Entities\\Empower.NHibernate.Entities.csproj": {
+              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.NHibernate.Entities\\Empower.NHibernate.Entities.csproj"
             },
-            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj": {
-              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj"
+            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj": {
+              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj"
             },
-            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj": {
-              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj"
+            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj": {
+              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj"
             },
-            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj": {
-              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj"
+            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.NHibernate.Setup\\Empower.NHibernate.Setup.csproj": {
+              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.NHibernate.Setup\\Empower.NHibernate.Setup.csproj"
             },
-            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate.Entities\\Empower.NHibernate.Entities.csproj": {
-              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate.Entities\\Empower.NHibernate.Entities.csproj"
+            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj": {
+              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj"
             },
-            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate.Setup\\Empower.NHibernate.Setup.csproj": {
-              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate.Setup\\Empower.NHibernate.Setup.csproj"
+            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj": {
+              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj"
             }
           }
         }
@@ -13846,22 +13846,22 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           },
-          "Microsoft.AspNetCore.All": {
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "2.0.0"
+            "version": "[2.0.0, )"
           },
           "Ninject": {
             "target": "Package",
-            "version": "3.3.4"
+            "version": "[3.3.4, )"
           }
         },
         "imports": [

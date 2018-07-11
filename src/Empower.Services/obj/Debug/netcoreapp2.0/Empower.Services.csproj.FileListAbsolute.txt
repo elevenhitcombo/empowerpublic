@@ -27,3 +27,5 @@ F:\Projects\Git\empowerpublic\src\Empower.Services\bin\Debug\netcoreapp2.0\Empow
 F:\Projects\Git\empowerpublic\src\Empower.Services\obj\Debug\netcoreapp2.0\Empower.Services.csprojResolveAssemblyReference.cache
 F:\Projects\Git\empowerpublic\src\Empower.Services\obj\Debug\netcoreapp2.0\Empower.Services.dll
 F:\Projects\Git\empowerpublic\src\Empower.Services\obj\Debug\netcoreapp2.0\Empower.Services.pdb
+C:\Projects\empower\empowerpublic\src\Empower.Services\bin\Debug\netcoreapp2.0\Empower.Domain.dll
+C:\Projects\empower\empowerpublic\src\Empower.Services\bin\Debug\netcoreapp2.0\Empower.Domain.pdb

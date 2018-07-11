@@ -57,3 +57,5 @@ F:\Projects\Git\empowerpublic\src\Empower.Mvc\bin\Debug\netcoreapp2.0\Empower.Se
 F:\Projects\Git\empowerpublic\src\Empower.Mvc\bin\Debug\netcoreapp2.0\Empower.Settings.Services.pdb
 F:\Projects\Git\empowerpublic\src\Empower.Mvc\obj\Debug\netcoreapp2.0\Empower.Mvc.dll
 F:\Projects\Git\empowerpublic\src\Empower.Mvc\obj\Debug\netcoreapp2.0\Empower.Mvc.pdb
+C:\Projects\empower\empowerpublic\src\Empower.Mvc\bin\Debug\netcoreapp2.0\Empower.Domain.dll
+C:\Projects\empower\empowerpublic\src\Empower.Mvc\bin\Debug\netcoreapp2.0\Empower.Domain.pdb

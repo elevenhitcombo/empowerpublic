@@ -664,7 +664,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Users\\SSC17\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -673,17 +673,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj",
+      "projectUniqueName": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj",
       "projectName": "Empower.Domain",
-      "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Domain\\obj\\",
+      "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj",
+      "packagesPath": "C:\\Users\\SSC17\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SSC17\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -710,7 +710,7 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },

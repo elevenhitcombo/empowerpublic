@@ -6,3 +6,11 @@ F:\Projects\Git\empowerpublic\src\Empower.Domain\bin\Debug\netcoreapp2.0\Empower
 F:\Projects\Git\empowerpublic\src\Empower.Domain\bin\Debug\netcoreapp2.0\Empower.Domain.pdb
 F:\Projects\Git\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.dll
 F:\Projects\Git\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.pdb
+C:\Projects\empower\empowerpublic\src\Empower.Domain\bin\Debug\netcoreapp2.0\Empower.Domain.deps.json
+C:\Projects\empower\empowerpublic\src\Empower.Domain\bin\Debug\netcoreapp2.0\Empower.Domain.dll
+C:\Projects\empower\empowerpublic\src\Empower.Domain\bin\Debug\netcoreapp2.0\Empower.Domain.pdb
+C:\Projects\empower\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\empower\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.AssemblyInfoInputs.cache
+C:\Projects\empower\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.AssemblyInfo.cs
+C:\Projects\empower\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.dll
+C:\Projects\empower\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.pdb
