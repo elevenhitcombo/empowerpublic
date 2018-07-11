@@ -1,5 +1,5 @@
 ﻿
-@*@model ActorListViewModel*@
+@model ActorListViewModel
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -9,10 +9,10 @@
     <h2>Paul Alan Taylor</h2>
 </div>
 <div class="row">
-    @foreach (var actor in (List<Actor>)ViewData["actors"])
+    @foreach (var actor in Model.Actors)
     {
     <div class="col-md-4">
-        <h2>@actor.Lastname, @actor.Firstname <span class="badge">@actor.Films</span></h2>
+        <h2>@actor.LastName, @actor.FirstName</h2>
     </div>
     }
 </div>
