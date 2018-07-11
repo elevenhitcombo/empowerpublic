@@ -16,3 +16,5 @@ F:\Projects\Git\empowerpublic\src\Empower.Services\obj\Debug\netcoreapp2.0\Empow
 F:\Projects\Git\empowerpublic\src\Empower.Services\obj\Debug\netcoreapp2.0\Empower.Services.AssemblyInfo.cs
 F:\Projects\Git\empowerpublic\src\Empower.Services\obj\Debug\netcoreapp2.0\Empower.Services.dll
 F:\Projects\Git\empowerpublic\src\Empower.Services\obj\Debug\netcoreapp2.0\Empower.Services.pdb
+F:\Projects\Git\empowerpublic\src\Empower.Services\bin\Debug\netcoreapp2.0\Empower.Domain.dll
+F:\Projects\Git\empowerpublic\src\Empower.Services\bin\Debug\netcoreapp2.0\Empower.Domain.pdb

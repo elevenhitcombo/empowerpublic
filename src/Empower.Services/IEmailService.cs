@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Empower.Domain.Client.Requests;
+using Empower.Domain.Client.Responses;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,6 +8,7 @@ namespace Empower.Services
 {
     public interface IEmailService
     {
-        DateTime? SendContactEmail(string name, string email, string message);
+        SendEmailResponse SendContactEmail(SendEmailRequest request);
+        SendEmailResponse SendContactEmail(string name, string email, string message);
     }
 }

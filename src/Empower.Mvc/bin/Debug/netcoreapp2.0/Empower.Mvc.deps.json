@@ -4069,6 +4069,14 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "Empower.Domain/1.0.0": {
+        "runtime": {
+          "Empower.Domain.dll": {}
+        },
+        "compile": {
+          "Empower.Domain.dll": {}
+        }
+      },
       "Empower.Network.Services/1.0.0": {
         "dependencies": {
           "Empower.Services": "1.0.0"
@@ -4081,6 +4089,9 @@
         }
       },
       "Empower.Services/1.0.0": {
+        "dependencies": {
+          "Empower.Domain": "1.0.0"
+        },
         "runtime": {
           "Empower.Services.dll": {}
         },
@@ -6418,6 +6429,11 @@
       "sha512": "sha512-W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
+    },
+    "Empower.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Empower.Network.Services/1.0.0": {
       "type": "project",

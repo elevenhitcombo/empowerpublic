@@ -14,7 +14,15 @@
           "Empower.Network.Services.dll": {}
         }
       },
+      "Empower.Domain/1.0.0": {
+        "runtime": {
+          "Empower.Domain.dll": {}
+        }
+      },
       "Empower.Services/1.0.0": {
+        "dependencies": {
+          "Empower.Domain": "1.0.0"
+        },
         "runtime": {
           "Empower.Services.dll": {}
         }
@@ -23,6 +31,11 @@
   },
   "libraries": {
     "Empower.Network.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Empower.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,4 +1,6 @@
-﻿using Empower.Services;
+﻿using Empower.Domain.Client.Requests;
+using Empower.Domain.Client.Responses;
+using Empower.Services;
 using System;
 using System.Collections.Generic;
 using System.Net.Mail;
@@ -18,9 +20,20 @@ namespace Empower.Network.Services
             _emailSettingsService = emailSettingsService;
         }
 
-        public DateTime? SendContactEmail(string name, string email, string msg)
+        public SendEmailResponse SendContactEmail(string name, string email, string message)
         {
-            DateTime? completedAt = null;
+            return SendContactEmail(new SendEmailRequest
+            {
+                Subject = "Overload",
+                Name = name,
+                Email = email,
+                Message = message
+            });
+        }
+
+        public SendEmailResponse SendContactEmail(SendEmailRequest request)
+        {
+            var response = new SendEmailResponse();
 
             // Do something
             var message = new MailMessage();
@@ -30,7 +43,7 @@ namespace Empower.Network.Services
                    _emailSettingsService.ContactToEmail);
 
             // Subject
-            message.Subject = "New contact message";
+            message.Subject = request.Subject ?? "New contact message";
             // To
             message.To.Add(new MailAddress(
                _emailSettingsService.ContactToEmail,
@@ -38,9 +51,9 @@ namespace Empower.Network.Services
             ));
 
             // Message
-            message.Body = $"New contact from {name} ({email}) " +
+            message.Body = $"New contact from {request.Name} ({request.Email}) " +
                 Environment.NewLine +
-                msg;
+                request.Message;
 
             // Set up a new SmtpClient
             var mailClient = new SmtpClient(
@@ -59,14 +72,18 @@ namespace Empower.Network.Services
             try
             {
                 mailClient.Send(message);
-                completedAt = DateTime.UtcNow;
+                response.CompletedAt = DateTime.UtcNow;
             }
             catch (Exception ex)
             {
-                
+                response.ErrorMessage = 
+                    $"Oops! We did it again! ({ex.Message})";
+
+
             }
 
-            return completedAt;
+            // SendEmailResponse
+            return response;
         }
     }
 }
