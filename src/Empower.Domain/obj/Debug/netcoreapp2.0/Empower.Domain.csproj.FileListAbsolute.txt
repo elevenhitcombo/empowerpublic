@@ -14,3 +14,4 @@ C:\Projects\empower\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Emp
 C:\Projects\empower\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.AssemblyInfo.cs
 C:\Projects\empower\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.dll
 C:\Projects\empower\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.pdb
+C:\Projects\empower\empowerpublic\src\Empower.Domain\obj\Debug\netcoreapp2.0\Empower.Domain.csprojResolveAssemblyReference.cache

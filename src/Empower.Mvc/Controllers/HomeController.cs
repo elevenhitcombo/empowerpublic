@@ -11,13 +11,15 @@ using NHibernate;
 using NHibernate.Criterion;
 using Empower.Domain.Client.Requests;
 using Empower.Domain.Client.ViewModels;
+using Empower.NHibernate.Interfaces;
 
 namespace Empower.Mvc.Controllers
 {
     public class HomeController : Controller
     {
         private IEmailService _emailService;
-        private ISession _session;
+        private IRepository<Empower.NHibernate.Entities.Actor> _actorRepository;
+
 
         // This is a constructor acting as a recipe.
         // It contains all the ingredients that HomeController
@@ -25,11 +27,11 @@ namespace Empower.Mvc.Controllers
         //
         public HomeController(
            IEmailService emailService,
-           ISession session
+           IRepository<Empower.NHibernate.Entities.Actor> actorRepository
         )
         {
             _emailService = emailService;
-            _session = session;
+            _actorRepository = actorRepository;
         }
 
         public IActionResult Index()

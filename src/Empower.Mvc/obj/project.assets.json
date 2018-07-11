@@ -5250,10 +5250,24 @@
           "bin/placeholder/Empower.Network.Services.dll": {}
         }
       },
+      "Empower.NHibernate/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "FluentNHibernate": "2.1.2"
+        },
+        "compile": {
+          "bin/placeholder/Empower.NHibernate.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Empower.NHibernate.dll": {}
+        }
+      },
       "Empower.NHibernate.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "Empower.NHibernate": "1.0.0",
           "FluentNHibernate": "2.1.2"
         },
         "compile": {
@@ -13747,6 +13761,11 @@
       "type": "project",
       "path": "../Empower.Network.Services/Empower.Network.Services.csproj",
       "msbuildProject": "../Empower.Network.Services/Empower.Network.Services.csproj"
+    },
+    "Empower.NHibernate/1.0.0": {
+      "type": "project",
+      "path": "../Empower.NHibernate/Empower.NHibernate.csproj",
+      "msbuildProject": "../Empower.NHibernate/Empower.NHibernate.csproj"
     },
     "Empower.NHibernate.Entities/1.0.0": {
       "type": "project",

@@ -18,6 +18,8 @@ using Microsoft.AspNetCore.Mvc.ViewFeatures.Internal;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Empower.Services;
 using nh = NHibernate;
+using Empower.NHibernate.Interfaces;
+using Empower.NHibernate;
 
 namespace Empower.Mvc
 {
@@ -99,7 +101,9 @@ namespace Empower.Mvc
             kernel.Bind<nh.ISession>().ToMethod(m => new Empower.NHibernate.Setup.NhHelper(
                  new SettingsService(Configuration)
                 ).Session);
-
+            kernel.Bind(typeof(IRepository<>))
+                .To(typeof(NHibernateRepository<>))
+                .InScope(RequestScope);
 
             // Cross-wire required framework services
             kernel.BindToMethod(app.GetRequestService<IViewBufferScope>);

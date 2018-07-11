@@ -4247,8 +4247,20 @@
           "Empower.Network.Services.dll": {}
         }
       },
+      "Empower.NHibernate/1.0.0": {
+        "dependencies": {
+          "FluentNHibernate": "2.1.2"
+        },
+        "runtime": {
+          "Empower.NHibernate.dll": {}
+        },
+        "compile": {
+          "Empower.NHibernate.dll": {}
+        }
+      },
       "Empower.NHibernate.Entities/1.0.0": {
         "dependencies": {
+          "Empower.NHibernate": "1.0.0",
           "FluentNHibernate": "2.1.2"
         },
         "runtime": {
@@ -6710,6 +6722,11 @@
       "sha512": ""
     },
     "Empower.Network.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Empower.NHibernate/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

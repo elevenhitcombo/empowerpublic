@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Empower.NHibernate.Base;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Empower.NHibernate.Entities
 {
-    public class Film
+    public class Film : Entity
     {
-        public virtual int Id { get; set; }
         public virtual string Title { get; set; }
         public virtual string Description { get; set; }
         public virtual string ReleaseYear { get; set; }

@@ -8,4 +8,8 @@
     <PackageReference Include="FluentNHibernate" Version="2.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Empower.NHibernate\Empower.NHibernate.csproj" />
+  </ItemGroup>
+
 </Project>
