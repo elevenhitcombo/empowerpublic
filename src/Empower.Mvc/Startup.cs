@@ -20,6 +20,8 @@ using Empower.Services;
 using nh = NHibernate;
 using Empower.NHibernate.Interfaces;
 using Empower.NHibernate;
+using Empower.NHibernate.Services;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Empower.Mvc
 {
@@ -49,6 +51,10 @@ namespace Empower.Mvc
             services.AddCustomControllerActivation(Resolve);
             services.AddCustomViewComponentActivation(Resolve);
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "Empower API", Version = "v1" });
+            });
             services.AddMvc();
         }
 
@@ -74,6 +80,12 @@ namespace Empower.Mvc
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+            });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Empower API V1");
             });
 
             app.UseAuthentication();
@@ -104,6 +116,8 @@ namespace Empower.Mvc
             kernel.Bind(typeof(IRepository<>))
                 .To(typeof(NHibernateRepository<>))
                 .InScope(RequestScope);
+            kernel.Bind<IFilmService>()
+                .To<FilmService>();
 
             // Cross-wire required framework services
             kernel.BindToMethod(app.GetRequestService<IViewBufferScope>);

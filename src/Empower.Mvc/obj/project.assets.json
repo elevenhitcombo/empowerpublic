@@ -3341,6 +3341,68 @@
           "lib/netstandard1.5/StackExchange.Redis.StrongName.dll": {}
         }
       },
+      "Swashbuckle.AspNetCore/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Swashbuckle.AspNetCore.Swagger": "3.0.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "3.0.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.4",
+          "Microsoft.AspNetCore.Mvc.Formatters.Json": "1.0.4",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.ApiExplorer": "1.0.4",
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.4",
+          "Microsoft.AspNetCore.Mvc.DataAnnotations": "1.0.4",
+          "NETStandard.Library": "1.6.1",
+          "Swashbuckle.AspNetCore.Swagger": "3.0.0",
+          "System.Xml.XPath": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Routing": "1.0.4",
+          "Microsoft.AspNetCore.StaticFiles": "1.0.4",
+          "Microsoft.Extensions.FileProviders.Embedded": "1.0.1",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -5185,7 +5247,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Xml.XPath.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.dll": {}
@@ -5275,6 +5337,22 @@
         },
         "runtime": {
           "bin/placeholder/Empower.NHibernate.Entities.dll": {}
+        }
+      },
+      "Empower.NHibernate.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Empower.NHibernate": "1.0.0",
+          "Empower.NHibernate.Entities": "1.0.0",
+          "Empower.Services": "1.0.0",
+          "FluentNHibernate": "2.1.2"
+        },
+        "compile": {
+          "bin/placeholder/Empower.NHibernate.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Empower.NHibernate.Services.dll": {}
         }
       },
       "Empower.NHibernate.Setup/1.0.0": {
@@ -8824,6 +8902,56 @@
         "lib/netstandard1.5/StackExchange.Redis.StrongName.xml",
         "stackexchange.redis.strongname.1.2.4.nupkg.sha512",
         "stackexchange.redis.strongname.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore/3.0.0": {
+      "sha512": "aM17YeBlYLIftD+4xCUPw/yT+FLjCyOCFinikXj42hntFYkkAuTRGLm9x+t7kfC13/OBiMJ1XEjl3MGeknx1cw==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore/3.0.0",
+      "files": [
+        "lib/net451/Swashbuckle.AspNetCore.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.dll",
+        "swashbuckle.aspnetcore.3.0.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Swagger/3.0.0": {
+      "sha512": "smrewcRU7HK+3WRZWNYFXVAqD1apyIEwcYEdzVu23tNJek8GQM1V8yqIlj41D8CbYoqaeF+fDhkUDY6FSXUDuw==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swagger/3.0.0",
+      "files": [
+        "lib/net451/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net451/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.xml",
+        "swashbuckle.aspnetcore.swagger.3.0.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/3.0.0": {
+      "sha512": "DjGV/s6dUi+Xg4ofc2/TCDJlFhGAstvStCBAJ8F2mllIRAtf+s0HsfAIPmFy+W0gOzo1/voRtMKU1uvINZtDFw==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggergen/3.0.0",
+      "files": [
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "swashbuckle.aspnetcore.swaggergen.3.0.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/3.0.0": {
+      "sha512": "Gg3rELfq7qJOx8d4xO6hvqSdhMk9ofQCdtLVjBAAVyKehkJRCqiXUO+hJ+/GeEngkaLEglaK/+6an4gC/AxOlg==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggerui/3.0.0",
+      "files": [
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "swashbuckle.aspnetcore.swaggerui.3.0.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -13772,6 +13900,11 @@
       "path": "../Empower.NHibernate.Entities/Empower.NHibernate.Entities.csproj",
       "msbuildProject": "../Empower.NHibernate.Entities/Empower.NHibernate.Entities.csproj"
     },
+    "Empower.NHibernate.Services/1.0.0": {
+      "type": "project",
+      "path": "../Empower.NHibernate.Services/Empower.NHibernate.Services.csproj",
+      "msbuildProject": "../Empower.NHibernate.Services/Empower.NHibernate.Services.csproj"
+    },
     "Empower.NHibernate.Setup/1.0.0": {
       "type": "project",
       "path": "../Empower.NHibernate.Setup/Empower.NHibernate.Setup.csproj",
@@ -13792,6 +13925,7 @@
     ".NETCoreApp,Version=v2.0": [
       "Empower.Domain >= 1.0.0",
       "Empower.NHibernate.Entities >= 1.0.0",
+      "Empower.NHibernate.Services >= 1.0.0",
       "Empower.NHibernate.Setup >= 1.0.0",
       "Empower.Network.Services >= 1.0.0",
       "Empower.Services >= 1.0.0",
@@ -13799,11 +13933,12 @@
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.0",
-      "Ninject >= 3.3.4"
+      "Ninject >= 3.3.4",
+      "Swashbuckle.AspNetCore >= 3.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SSC17\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13812,17 +13947,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Mvc\\Empower.Mvc.csproj",
+      "projectUniqueName": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Mvc\\Empower.Mvc.csproj",
       "projectName": "Empower.Mvc",
-      "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Mvc\\Empower.Mvc.csproj",
-      "packagesPath": "C:\\Users\\SSC17\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Mvc\\obj\\",
+      "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Mvc\\Empower.Mvc.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Mvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\SSC17\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13835,23 +13970,26 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.NHibernate.Entities\\Empower.NHibernate.Entities.csproj": {
-              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.NHibernate.Entities\\Empower.NHibernate.Entities.csproj"
+            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj": {
+              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj"
             },
-            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj": {
-              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Settings.Services\\Empower.Settings.Services.csproj"
+            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj": {
+              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj"
             },
-            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj": {
-              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj"
+            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj": {
+              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Domain\\Empower.Domain.csproj"
             },
-            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.NHibernate.Setup\\Empower.NHibernate.Setup.csproj": {
-              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.NHibernate.Setup\\Empower.NHibernate.Setup.csproj"
+            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate.Services\\Empower.NHibernate.Services.csproj": {
+              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate.Services\\Empower.NHibernate.Services.csproj"
             },
-            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj": {
-              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj"
+            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj": {
+              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.Services\\Empower.Services.csproj"
             },
-            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj": {
-              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.Network.Services\\Empower.Network.Services.csproj"
+            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate.Entities\\Empower.NHibernate.Entities.csproj": {
+              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate.Entities\\Empower.NHibernate.Entities.csproj"
+            },
+            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate.Setup\\Empower.NHibernate.Setup.csproj": {
+              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate.Setup\\Empower.NHibernate.Setup.csproj"
             }
           }
         }
@@ -13865,22 +14003,26 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.All": {
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "2.0.0"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "[2.0.0, )",
+            "version": "2.0.0",
             "autoReferenced": true
           },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "3.0.0"
+          },
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "2.0.0"
           },
           "Ninject": {
             "target": "Package",
-            "version": "[3.3.4, )"
+            "version": "3.3.4"
           }
         },
         "imports": [

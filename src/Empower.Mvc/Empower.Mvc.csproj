@@ -15,6 +15,7 @@
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
     <PackageReference Include="Ninject" Version="3.3.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +26,7 @@
     <ProjectReference Include="..\Empower.Domain\Empower.Domain.csproj" />
     <ProjectReference Include="..\Empower.Network.Services\Empower.Network.Services.csproj" />
     <ProjectReference Include="..\Empower.NHibernate.Entities\Empower.NHibernate.Entities.csproj" />
+    <ProjectReference Include="..\Empower.NHibernate.Services\Empower.NHibernate.Services.csproj" />
     <ProjectReference Include="..\Empower.NHibernate.Setup\Empower.NHibernate.Setup.csproj" />
     <ProjectReference Include="..\Empower.Services\Empower.Services.csproj" />
     <ProjectReference Include="..\Empower.Settings.Services\Empower.Settings.Services.csproj" />

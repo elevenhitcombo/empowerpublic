@@ -34,6 +34,15 @@ namespace Empower.NHibernate.Entities.Mappings
                .ParentKeyColumn("film_id")
                .LazyLoad();
 
+            HasManyToMany(x => x.Categories)
+              .Table("film_category")
+              .ChildKeyColumn("category_id")
+              .ParentKeyColumn("film_id")
+              .LazyLoad();
+
+            HasMany(x => x.Inventories)
+                .Table("inventory")
+                .Inverse();
         }
     }
 }

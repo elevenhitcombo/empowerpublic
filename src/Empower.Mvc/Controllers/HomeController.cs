@@ -18,20 +18,16 @@ namespace Empower.Mvc.Controllers
     public class HomeController : Controller
     {
         private IEmailService _emailService;
-        private IRepository<Empower.NHibernate.Entities.Actor> _actorRepository;
-
-
+     
         // This is a constructor acting as a recipe.
         // It contains all the ingredients that HomeController
         // needs to do its job.
         //
         public HomeController(
-           IEmailService emailService,
-           IRepository<Empower.NHibernate.Entities.Actor> actorRepository
+           IEmailService emailService
         )
         {
             _emailService = emailService;
-            _actorRepository = actorRepository;
         }
 
         public IActionResult Index()

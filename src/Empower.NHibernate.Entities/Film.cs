@@ -14,12 +14,15 @@ namespace Empower.NHibernate.Entities
         public virtual Language OriginalLanguage { get; set; }
         public virtual byte RentalDuration { get; set; }
         public virtual decimal RentalRate { get; set; }
-        public virtual short? Length { get; set; }
+        public virtual short Length { get; set; }
         public virtual decimal ReplacementCost { get; set; }
         public virtual string Rating { get; set; }
         public virtual string SpecialFeatures { get; set; }
         public virtual DateTime LastUpdate { get; set; }
         public virtual IList<Actor> Actors { get; set; }
+        public virtual IList<Category> Categories { get; set; }
+        public virtual IList<Inventory> Inventories { get; set; }
+
         
     }
 }

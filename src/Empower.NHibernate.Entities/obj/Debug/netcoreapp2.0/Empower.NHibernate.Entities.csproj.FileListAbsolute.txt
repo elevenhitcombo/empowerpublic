@@ -17,3 +17,6 @@ F:\Projects\Git\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcorea
 F:\Projects\Git\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.pdb
 C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\bin\Debug\netcoreapp2.0\Empower.NHibernate.dll
 C:\Projects\empower\empowerpublic\src\Empower.NHibernate.Entities\bin\Debug\netcoreapp2.0\Empower.NHibernate.pdb
+F:\Projects\Git\empowerpublic\src\Empower.NHibernate.Entities\bin\Debug\netcoreapp2.0\Empower.NHibernate.dll
+F:\Projects\Git\empowerpublic\src\Empower.NHibernate.Entities\bin\Debug\netcoreapp2.0\Empower.NHibernate.pdb
+F:\Projects\Git\empowerpublic\src\Empower.NHibernate.Entities\obj\Debug\netcoreapp2.0\Empower.NHibernate.Entities.csprojResolveAssemblyReference.cache

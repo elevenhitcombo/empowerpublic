@@ -3079,7 +3079,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SSC17\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -3088,17 +3088,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.NHibernate.Entities\\Empower.NHibernate.Entities.csproj",
+      "projectUniqueName": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate.Entities\\Empower.NHibernate.Entities.csproj",
       "projectName": "Empower.NHibernate.Entities",
-      "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.NHibernate.Entities\\Empower.NHibernate.Entities.csproj",
-      "packagesPath": "C:\\Users\\SSC17\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.NHibernate.Entities\\obj\\",
+      "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate.Entities\\Empower.NHibernate.Entities.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\SSC17\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3111,8 +3111,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Projects\\empower\\empowerpublic\\src\\Empower.NHibernate\\Empower.NHibernate.csproj": {
-              "projectPath": "C:\\Projects\\empower\\empowerpublic\\src\\Empower.NHibernate\\Empower.NHibernate.csproj"
+            "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate\\Empower.NHibernate.csproj": {
+              "projectPath": "F:\\Projects\\Git\\empowerpublic\\src\\Empower.NHibernate\\Empower.NHibernate.csproj"
             }
           }
         }
@@ -3128,12 +3128,12 @@
         "dependencies": {
           "FluentNHibernate": {
             "target": "Package",
-            "version": "[2.1.2, )"
+            "version": "2.1.2"
           },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.0, )",
+            "version": "2.0.0",
             "autoReferenced": true
           }
         },
