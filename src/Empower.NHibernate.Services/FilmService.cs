@@ -9,6 +9,7 @@ using Empower.NHibernate.Interfaces;
 using nh = NHibernate;
 using Empower.Domain.Client.Models;
 using NHibernate.Transform;
+using System.Linq;
 
 namespace Empower.NHibernate.Services
 {
@@ -86,7 +87,52 @@ namespace Empower.NHibernate.Services
                 }
                 : (Film)null;
 
+            PopulateFilmDetails(film);
             return film;
+        }
+
+        private void PopulateFilmDetails(Film film)
+        {
+            if (film?.Id == null)
+                return;
+
+            Actor actorResult = null;
+            Category categoryResult = null;
+            en.Actor actorAlias = null;
+            en.Film filmAlias = null;
+            en.Category categoryAlias = null;
+
+
+            var actors = _session.QueryOver<en.Actor>(() => actorAlias)
+                .JoinAlias(fi => fi.Films, () => filmAlias)
+                .Where(fa => filmAlias.Id == film.Id)
+                .SelectList
+                (
+                    list => list
+                        .Select(() => actorAlias.Id).WithAlias(() => actorResult.Id)
+                        .Select(() => actorAlias.FirstName).WithAlias(() => actorResult.FirstName)
+                        .Select(() => actorAlias.LastName).WithAlias(() => actorResult.LastName)
+                        .Select(() => actorAlias.LastUpdate).WithAlias(() => actorResult.LastUpdate)
+                )
+                .TransformUsing(Transformers.AliasToBean<Actor>())
+                .Future<Actor>();
+
+            var categories = _session.QueryOver<en.Category>(() => categoryAlias)
+               .JoinAlias(fi => fi.Films, () => filmAlias)
+               .Where(fa => filmAlias.Id == film.Id)
+               .SelectList
+               (
+                   list => list
+                       .Select(() => categoryAlias.Id).WithAlias(() => categoryResult.Id)
+                       .Select(() => categoryAlias.Name).WithAlias(() => categoryResult.Name)
+                       .Select(() => categoryAlias.LastUpdate).WithAlias(() => categoryResult.LastUpdate)
+               )
+               .TransformUsing(Transformers.AliasToBean<Category>())
+               .List<Category>();
+
+            film.Actors = actors.ToList();
+            film.Categories = categories.ToList();
+
         }
 
         public FilmSearchResponse Search(FilmSearchRequest request)

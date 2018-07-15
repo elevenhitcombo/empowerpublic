@@ -22,6 +22,8 @@ using Empower.NHibernate.Interfaces;
 using Empower.NHibernate;
 using Empower.NHibernate.Services;
 using Swashbuckle.AspNetCore.Swagger;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Cors.Internal;
 
 namespace Empower.Mvc
 {
@@ -56,6 +58,16 @@ namespace Empower.Mvc
                 c.SwaggerDoc("v1", new Info { Title = "Empower API", Version = "v1" });
             });
             services.AddMvc();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins("http://localhost:4200"));
+            });
+
+            services.Configure<MvcOptions>(options =>
+            {
+                options.Filters.Add(new CorsAuthorizationFilterFactory("AllowSpecificOrigin"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -89,6 +101,8 @@ namespace Empower.Mvc
             });
 
             app.UseAuthentication();
+            app.UseCors(builder =>
+                builder.WithOrigins("http://localhost:4200"));
         }
 
         private IKernel RegisterApplicationComponents(IApplicationBuilder app)
@@ -110,15 +124,20 @@ namespace Empower.Mvc
             kernel.Bind<IEmailSettingsService>().To<EmailSettingsService>();
             kernel.Bind<IEmailService>().To<EmailService>().InSingletonScope();
 
+
             kernel.Bind<nh.ISession>().ToMethod(m => new Empower.NHibernate.Setup.NhHelper(
                  new SettingsService(Configuration)
-                ).Session);
+                ).Session)
+                .InScope(RequestScope);
             kernel.Bind(typeof(IRepository<>))
                 .To(typeof(NHibernateRepository<>))
                 .InScope(RequestScope);
             kernel.Bind<IFilmService>()
-                .To<FilmService>();
-
+                .To<FilmService>()
+                .InScope(RequestScope);
+            kernel.Bind<ICategoryService>()
+                .To<CategoryService>()
+                .InScope(RequestScope);
             // Cross-wire required framework services
             kernel.BindToMethod(app.GetRequestService<IViewBufferScope>);
 

@@ -34,6 +34,8 @@ namespace Empower.Mvc.Controllers
             return vm;
         }
 
+        
+
         [HttpGet]
         [Route("get/{id}")]
         public Film Get(int id)
