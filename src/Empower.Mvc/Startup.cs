@@ -138,6 +138,9 @@ namespace Empower.Mvc
             kernel.Bind<ICategoryService>()
                 .To<CategoryService>()
                 .InScope(RequestScope);
+            kernel.Bind<IActorService>()
+               .To<ActorService>()
+               .InScope(RequestScope);
             // Cross-wire required framework services
             kernel.BindToMethod(app.GetRequestService<IViewBufferScope>);
 

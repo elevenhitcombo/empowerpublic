@@ -15,3 +15,4 @@ F:\Projects\Git\empowerpublic\src\Empower.NHibernate\obj\Debug\netcoreapp2.0\Emp
 F:\Projects\Git\empowerpublic\src\Empower.NHibernate\obj\Debug\netcoreapp2.0\Empower.NHibernate.AssemblyInfo.cs
 F:\Projects\Git\empowerpublic\src\Empower.NHibernate\obj\Debug\netcoreapp2.0\Empower.NHibernate.dll
 F:\Projects\Git\empowerpublic\src\Empower.NHibernate\obj\Debug\netcoreapp2.0\Empower.NHibernate.pdb
+F:\Projects\Git\empowerpublic\src\Empower.NHibernate\obj\Debug\netcoreapp2.0\Empower.NHibernate.csprojResolveAssemblyReference.cache

@@ -177,7 +177,7 @@ namespace Empower.NHibernate.Services
                     _session.Flush();
                     existingById.Name = request.Name;
                     existingById.LastUpdate = DateTime.UtcNow;
-                    _session.Save(existingById);
+                    _categoryRepository.Update(existingById);
 
                     response.Category = new Category()
                     {

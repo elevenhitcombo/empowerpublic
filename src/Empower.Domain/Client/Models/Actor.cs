@@ -10,5 +10,6 @@ namespace Empower.Domain.Client.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime LastUpdate { get; set; }
+        public IList<Film> Films { get; set; }
     }
 }
