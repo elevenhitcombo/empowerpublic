@@ -12,7 +12,7 @@ using Empower.Domain.Client.Models;
 namespace Empower.Mvc.Controllers
 {
     [Produces("application/json")]
-    [Route("api/Actor")]
+    [Route("api/actor")]
     public class ActorController : Controller
     {
         private readonly IActorService _actorService;

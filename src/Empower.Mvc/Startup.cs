@@ -24,6 +24,7 @@ using Empower.NHibernate.Services;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Cors.Internal;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 
 namespace Empower.Mvc
 {
@@ -58,15 +59,21 @@ namespace Empower.Mvc
                 c.SwaggerDoc("v1", new Info { Title = "Empower API", Version = "v1" });
             });
             services.AddMvc();
+            var corsBuilder = new CorsPolicyBuilder();
+            corsBuilder.AllowAnyHeader();
+            corsBuilder.AllowAnyMethod();
+            //corsBuilder.AllowAnyOrigin(); // For anyone access.
+            corsBuilder.WithOrigins("http://localhost:4200"); // for a specific url. Don't add a forward slash on the end!
+            //corsBuilder.AllowCredentials();
+
             services.AddCors(options =>
             {
-                options.AddPolicy("AllowSpecificOrigin",
-                    builder => builder.WithOrigins("http://localhost:4200"));
+                options.AddPolicy("SiteCorsPolicy", corsBuilder.Build());
             });
 
             services.Configure<MvcOptions>(options =>
             {
-                options.Filters.Add(new CorsAuthorizationFilterFactory("AllowSpecificOrigin"));
+                options.Filters.Add(new CorsAuthorizationFilterFactory("SiteCorsPolicy"));
             });
         }
 
@@ -101,8 +108,12 @@ namespace Empower.Mvc
             });
 
             app.UseAuthentication();
-            app.UseCors(builder =>
-                builder.WithOrigins("http://localhost:4200"));
+
+            // ********************
+            // Setup CORS
+            // ********************
+
+            app.UseCors("SiteCorsPolicy");
         }
 
         private IKernel RegisterApplicationComponents(IApplicationBuilder app)

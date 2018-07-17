@@ -23,10 +23,12 @@ namespace Empower.Mvc.Controllers
         }
 
         [HttpGet]
+        // api/category/list/{page?}
         [Route("list/{page?}")]
         public CategorySearchResponse List(int page = 1)
         {
-            return _categoryService.Search(new CategorySearchRequest { PageNumber = page });
+            return _categoryService
+                .Search(new CategorySearchRequest { PageNumber = page });
         }
 
         [HttpPost]
