@@ -28,6 +28,7 @@ namespace Empower.NHibernate
         public void Delete(TEntity entity)
         {
             _session.Delete(entity);
+            _session.Flush();
         }
 
         public TEntity Get(int id)
