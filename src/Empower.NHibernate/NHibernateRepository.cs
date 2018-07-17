@@ -44,6 +44,7 @@ namespace Empower.NHibernate
         public TEntity Update(TEntity entity)
         {
             _session.SaveOrUpdate(entity);
+            _session.Flush();
             return entity;
         }
     }
