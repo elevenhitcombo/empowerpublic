@@ -25,6 +25,7 @@ using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Cors.Internal;
 using Microsoft.AspNetCore.Cors.Infrastructure;
+using Newtonsoft.Json;
 
 namespace Empower.Mvc
 {
@@ -59,6 +60,7 @@ namespace Empower.Mvc
                 c.SwaggerDoc("v1", new Info { Title = "Empower API", Version = "v1" });
             });
             services.AddMvc();
+           
             var corsBuilder = new CorsPolicyBuilder();
             corsBuilder.AllowAnyHeader();
             corsBuilder.AllowAnyMethod();

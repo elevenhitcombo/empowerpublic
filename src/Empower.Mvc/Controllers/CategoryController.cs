@@ -33,7 +33,8 @@ namespace Empower.Mvc.Controllers
 
         [HttpPost]
         [Route("create")]
-        public CategoryCreateResponse Create(CategoryCreateRequest request)
+        
+        public CategoryCreateResponse Create([FromBody]CategoryCreateRequest request)
         {
             CategoryCreateResponse response;
 
